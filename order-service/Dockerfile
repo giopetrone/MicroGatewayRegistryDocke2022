@@ -1,4 +1,5 @@
-FROM openjdk:8-jdk-alpine
+#FROM openjdk:8-jdk-alpine
+FROM openjdk:13-alpine
 EXPOSE 8082
 ARG JAR_FILE=build/libs/*.jar
 COPY ${JAR_FILE} app.jar
